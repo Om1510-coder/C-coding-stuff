@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    //printf("Hello World");
+    int i;
+    printf("Enter the number of which you want to find factorial\n");
+    scanf("%d",&i);
+    int op = 1;
+    int j;
+    for(j=1;j<=i;j++){
+        op = op*j;
+    }
+    printf("The factorial of the number is : %d",op);
+    
+    return 0;
+}
