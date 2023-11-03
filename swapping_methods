@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+    int i;
+    int j;
+    int temp;
+    printf("Enter first number i \n");
+    scanf("%d",&i);
+    printf("Enter second number j \n");
+    scanf("%d",&j);
+    //swapping Code
+    temp = i;
+    i = j;
+    j = temp;
+    printf("Swapped numbers : i %d j %d\n",i,j);
+    
+    return 0;
+}
