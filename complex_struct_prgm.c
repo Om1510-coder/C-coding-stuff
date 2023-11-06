@@ -1,5 +1,6 @@
 //c code to take in two complex numbers and perform addition, subtraction, conjugate etc.
-
+//written with base concept of using structure for the two parts of a complex number
+//base code from programiz, some obviously stupid lines added by me
 #include <stdio.h>
 #include <math.h>
 struct complex_struct{
