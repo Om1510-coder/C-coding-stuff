@@ -1,0 +1,19 @@
+About pointers:
+1. The '&' operator gives the address of the variable.
+2. The variable without any operator returns its value.
+3. The *(&var) will return the value of var.
+4. Doing this: *(var) will cause an error as the * operator will expect an adress value, not the name of the variable.
+5. Suppose you define int *ptr, ptr = &var,
+6. printing 'ptr' will print the adress of var
+7. Printing *ptr will print the value of var.
+8. Printing using **ptr will again give an error, because again, * expects an address and *ptr is a value.
+9. Using &(*ptr) will print the adress of the variable. 'ptr' points to the address of var, *ptr is the value/name of 'var', &(*ptr) is the adress of the var.
+10. * stands for value at adress.
+11. &ptr will return the adress of the pointer.
+12. Even if you are pointing to an int(4 bytes) the pointer may be of size 8 bytes(64 bit machine) or 4 bytes(32 bit machine)
+13. For charachters, stuff starts to get tricky. 
+14. If you declare char *ptr, char x = "A", ptr = &x, 
+15. If you print ptr with an 'int' specifier, you will get the address of where x is stored.
+16. if you print ptr with a 'char' specifier, you will get some squiggly stuff, symbols, basically the ptr, though of the type char, holds the address of the char variable. 
+17. Funnily enough you can use an int pointer to point at a char, but take care while printing or accessing the char value, as this will give some really random numbers, 
+    as you are trying to print a char value using an int specifier.
