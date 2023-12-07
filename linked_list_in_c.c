@@ -1,4 +1,4 @@
-
+//linked lists
 #include <stdio.h>
 #include <stdlib.h>
 
