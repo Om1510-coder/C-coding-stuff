@@ -17,3 +17,4 @@ About pointers:
 16. if you print ptr with a 'char' specifier, you will get some squiggly stuff, symbols, basically the ptr, though of the type char, holds the address of the char variable. 
 17. Funnily enough you can use an int pointer to point at a char, but take care while printing or accessing the char value, as this will give some really random numbers, 
     as you are trying to print a char value using an int specifier.
+   
